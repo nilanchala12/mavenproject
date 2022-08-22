@@ -14,17 +14,8 @@ public class LoginTest {
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		driver.get("https://docs.google.com/document/d/1XB2d4kTzhvmMrvYMgy53AzM4q9iDAxQq7pZ69a2IJjs/edit");
 		driver.manage().window().maximize();
-		
-		WebElement user=driver.findElement(By.xpath("//input[@id='txtUsername']"));
-		user.sendKeys("Admin");
-		
-		WebElement psswd=driver.findElement(By.xpath("//input[@id='txtPassword']"));
-		psswd.sendKeys("admin123");
-		
-		WebElement submit=driver.findElement(By.xpath("//input[@id='btnLogin']"));
-		submit.click();
 		
 		driver.close();
 		
